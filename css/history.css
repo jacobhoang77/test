@@ -1,0 +1,100 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #111 !important; /* Making the brand name stand out */
+}
+
+.navbar .btn {
+    margin-left: 1rem;
+}
+
+/* Slogan section styling */
+.slogan-section {
+    padding: 3rem;
+    background-color: #181a1f;
+    color: #bab5b1;
+    text-align: left;
+}
+
+.slogan-section h2 {
+    font-weight: lighter;
+    margin-bottom: 2rem;
+}
+
+.slogan-section p {
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.slogan-section img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.footer a {
+    color: #000000 !important; 
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #333!important;; 
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 1.5rem;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .navbar {
+    background-color: #222;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar .btn {
+        margin-left: 0;
+    }
+
+    .slogan-section {
+        text-align: center;
+    }
+
+    .slogan-section img {
+        max-width: 80%;
+        margin-top: 2rem;
+    }
+}
